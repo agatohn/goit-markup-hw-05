@@ -146,7 +146,7 @@ body {
   background-color: var(--accent-color);
   position: absolute;
   left: 0;
-  bottom: -30px;
+  bottom: -28px;
 }
 
 .header-nav .link.current {
@@ -285,7 +285,34 @@ body {
 
 .working-list {
   display: flex;
-  justify-content: space-between;
+  margin-left: -30px;
+}
+
+.working-item {
+  
+  flex-basis: calc(100% / 3) -30px;
+  margin-left: 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.working-overtext {
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 27px 0px;
+  background: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /* our team */
