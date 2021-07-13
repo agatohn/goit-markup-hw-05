@@ -626,8 +626,7 @@ body {
 .works-item:hover .works-item-hidden, .works-item:focus .works-item-hidden {
   /* content: ""; */
   transform: translateY(-294px);
- }
-
+}
 
 .works-image-block {
   position: relative;
@@ -682,7 +681,9 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+  */
 }
 
 .modal {
@@ -709,6 +710,11 @@ body {
   top: 8px;
 }
 
+.close-btn:hover, .close-btn:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
 .close-icon {
   width: 11px;
   height: 11px;
@@ -717,4 +723,5 @@ body {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: none;
 }
